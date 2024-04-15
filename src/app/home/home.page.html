@@ -1,20 +1,88 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      TourSpace
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding">
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <!-- Informações sobre o clima -->
+  <div class="weather-info">
+    <div class="location">
+      <p id="city-country">Luanda, Angola</p>
+      <div class="weather-details">
+        <div class="temperature-icon">
+          <ion-icon name="cloud-outline"></ion-icon>
+          <span id="temperature">25°C</span>
+        </div>
+        <ion-button class="arrow-button" size="small">❯</ion-button>
+      </div>
+    </div>
   </div>
+
+  <!-- Linha separadora -->
+  <div class="line"></div>
+
+  <!-- Zonas de interesse -->
+  <div class="zone-interesse">
+    <p>Zonas de interesse</p>
+  </div>
+
+  <!-- Barra de pesquisa -->
+  <ion-searchbar color="medium" show-clear-button="never" placeholder="Buscar lugar ou região..."
+    class="custom-searchbar"></ion-searchbar>
+
+  <!-- Ícones e botões de ação -->
+  <div class="icon-buttons">
+    <ion-button class="icon-button" routerLink="/tourist-places">
+      <ion-icon name="navigate-outline"></ion-icon>
+    </ion-button>
+
+    <ion-button class="icon-button" routerLink="/station">
+      <ion-icon name="bus-outline"></ion-icon>
+    </ion-button>
+
+    <ion-button class="icon-button" routerLink="/info">
+      <ion-icon name="information-circle-outline"></ion-icon>
+    </ion-button>
+
+    <ion-button class="icon-button" routerLink="/restaurant">
+      <ion-icon name="restaurant-outline"></ion-icon>
+    </ion-button>
+
+    <ion-button class="icon-button" routerLink="/learn-more">
+      <ion-icon name="book-outline"></ion-icon>
+    </ion-button>
+</div>
+<div class="escursion">
+  <div class="escursion-title">
+    <h2>Excursões organizadas</h2>
+  </div>
+  <div class="escursion-button">
+    <ion-button class="arrow-button" size="small">saber mais ❯</ion-button>
+  </div>
+</div>
+
 </ion-content>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom" mode="md" translucent>
+    <ion-tab-button tab="home">
+      <ion-icon name="home"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button tab="map">
+      <ion-icon name="map-outline"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button tab="calendar">
+      <ion-icon name="calendar-outline"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button tab="search">
+      <ion-icon name="search-outline"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button tab="person">
+      <ion-icon name="person-circle-outline"></ion-icon>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

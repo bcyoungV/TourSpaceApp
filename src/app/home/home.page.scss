@@ -25,3 +25,103 @@
 #container a {
   text-decoration: none;
 }
+
+ion-icon{
+  font-size: 25px;
+}
+
+.weather-info {
+  margin-bottom: 20px;
+}
+
+.location {
+    margin-top: -16px;
+}
+
+.weather-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.weather-details ion-icon {
+  margin-right: 10px;
+  margin-bottom: -5px;}
+
+
+
+.arrow-button {
+  margin-left: auto;
+  --background: transparent;
+    --color: #3880ff;
+
+
+}
+
+.line {
+  height: 0.5px;
+  background-color: #ccc;
+  width: 100%;
+  margin-top: -15px;
+}
+.zone-interesse p{
+
+}
+
+.custom-searchbar {
+  --background: rgb(62, 62, 62);
+  /* Fundo cinza claro */
+  --placeholder-font-size: 11px;
+  /* Tamanho da fonte do placeholder */
+  --placeholder-opacity: 1;
+  /* Opacidade do placeholder */
+  --search-icon-order: 0;
+  width: 100%;
+margin-left: 0;
+padding-left: 0;
+margin-top: -10px;
+--border-radius: 10px;}
+
+.icon-buttons {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.icon-button {
+  width: 56px;
+  height: 56px;
+  margin: 0 10px;
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-button ion-icon {
+  font-size: 2em;
+}
+
+.icon-button p {
+  font-size: 0.6em;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.escursion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* Divide o espaço horizontal em duas partes iguais */
+  align-items: center;
+  /* Alinha verticalmente no centro */
+}
+
+.escursion-title {
+  text-align: left;
+  /* Centraliza o texto */
+}
+
+.escursion-button{
+  text-align: end;
+}
